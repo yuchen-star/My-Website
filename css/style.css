@@ -127,6 +127,10 @@ a {
 .icon--white {
     fill: #fff;
 }
+/* 
+.icon--blue {
+    fill:
+} */
 
 .icon-container {
     background: #f3f9fa;
@@ -426,4 +430,68 @@ a {
 .collapsible--expanded .collapsible__content {
     max-height: 100vh;
     opacity: 1;
+}
+
+/* Why */
+.why .icon-container {
+    background: rgb(229, 240, 255);
+}
+
+.why__header {
+    margin-bottom: 0;
+}
+
+.why__content {
+    display: grid;
+    row-gap: 3rem;
+    grid-template-rows: 10rem 1fr;
+}
+
+.why__button .btn--stretched {
+    max-width: 100%;
+    max-height: 6rem;
+}
+
+.why__button {
+    justify-self: center;
+    align-self: center;
+}
+
+.why__items {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.why__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.why__item-title h3 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.why__item-content {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .why__items {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+    }
+
+    .why__item {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .why__items {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4rem;
+    }
 }
