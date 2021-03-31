@@ -127,10 +127,10 @@ a {
 .icon--white {
     fill: #fff;
 }
-/* 
+
 .icon--blue {
-    fill:
-} */
+    fill: dodgerblue;
+}
 
 .icon--tick {
     fill: rgb(5, 166, 119);
@@ -766,4 +766,71 @@ a {
 
 .media__image {
     margin-top: 1rem;
+}
+
+/* Navigation Bar */
+.nav {
+    background: rgba(240, 244, 245, 0.514);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.nav__list {
+    width: 100%;
+    margin: 0;
+}
+
+.nav__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+    color: #3d3c3f;
+}
+
+.nav__item > a:hover {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav__brand {
+    font-size: 4.8rem;
+    /* color: #fff; */
+    color: dodgerblue;
+}
+
+.nav__toggler {
+    opacity: 0.5;
+    width: 5rem;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+    border: 0;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px deepskyblue;
+}
+
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        opacity: 1;
+        width: auto;
+        font-size: 1.6rem;
+        display: flex;
+        max-height: 100%;
+        margin: 0 1rem;
+    }
+
+    .nav__item {
+        border: 0;
+    }
 }
