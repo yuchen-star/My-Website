@@ -134,7 +134,7 @@ a {
 
 .icon--tick {
     fill: rgb(5, 166, 119);
-    vertical-align: text-bottom;
+    vertical-align: top;
 }
 
 .icon--close {
@@ -219,6 +219,24 @@ a {
 .btn--stretched {
     padding-left: 4rem;
     padding-right: 4rem;
+}
+
+.btn--standard:hover {
+    background: var(--color-secondary);
+    opacity: 0.8;
+    color: #fff;
+}
+
+.btn--new:hover {
+    background: rgb(254, 224, 136);
+    opacity: 0.8;
+    color: #fff;
+}
+
+.btn--multisite:hover {
+    background: var(--color-primary);
+    opacity: 0.8;
+    color: #fff;
 }
 
 /* Lists */
@@ -453,6 +471,7 @@ section.start {
 
 .card__img-icon .icon-container {
     margin: 1rem;
+    cursor: pointer;
 }
 
 .card__content {
@@ -471,7 +490,7 @@ section.start {
     color: #fff;
 }
 
-.card--accent {
+.card--new {
     background: rgb(254, 224, 136);
     color: #fff;
 }
@@ -935,6 +954,7 @@ section.start {
     background: var(--color-primary);
     max-width: 28rem;
     margin-right: 3rem;
+    cursor: pointer;
 }
 
 .callout option {
