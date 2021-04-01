@@ -152,6 +152,10 @@ a {
     align-items: center;
 }
 
+.icon-container--black {
+    background: #555;
+}
+
 .icon-container--accent {
     background: var(--color-accent);
 }
@@ -426,7 +430,29 @@ section.start {
 
 .card__img {
     width: 120%;
-    align-self: strectch;
+    position: relative;
+}
+
+.card__img--hover {
+    filter: grayscale(50%);
+}
+
+.card__img-icon {
+    position: absolute;
+    top: 26%;
+    left: 21%;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s;
+}
+
+.card__img--hover .card__img-icon {
+    opacity: 1;
+    max-height: 100vh;
+}
+
+.card__img-icon .icon-container {
+    margin: 1rem;
 }
 
 .card__content {
