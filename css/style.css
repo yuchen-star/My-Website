@@ -372,7 +372,7 @@ section.start {
 
 /* Blocks */
 .block {
-    --padding-vertical: 6rem;
+    --padding-vertical: 5rem;
     padding: var(--padding-vertical) 2rem;
 }
 

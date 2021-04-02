@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Website</title>
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header>
@@ -24,7 +25,7 @@
         </header>
         <section class="block block--white block--skewed-left start">
             <div class="container grid grid--1x2">
-                <header class="block__header start--grid">
+                <header data-aos="fade-right" class="block__header start--grid">
                     <h1 class="block__heading">Turn your ideas into a succes</h1>
                     <p class="start__tagline">
                         Front's feature-rich designed demo pages help you create the best possible product.
@@ -35,22 +36,22 @@
                         <a class="link--arrow" href="#">了解更多</a>
                     </div>
                 </header>
-                <img src="images/main.png" alt="" class="start__image" />
+                <img data-aos="fade-left" src="images/main.png" alt="" class="start__image" />
             </div>
         </section>
         <section class="block why">
-            <header class="block__header why__header">
+            <header data-aos="zoom-in" class="block__header why__header">
                 <h2>What we can bring to you ?</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, itaque iusto.
                     Explicabo, ut sit.
                 </p>
             </header>
-            <div class="container why__content">
-                <div class="why__button">
+            <div  class="container why__content">
+                <div data-aos="zoom-out" class="why__button">
                     <button class="btn btn--secondary btn--stretched">View all</button>
                 </div>
-                <div class="why__items">
+                <div data-aos="flip-left" class="why__items">
                     <div class="why__item">
                         <div class="why__item-icon">
                             <span class="icon-container">
@@ -137,13 +138,13 @@
             </div>
         </section>
         <section class="block">
-            <header class="block__header">
+            <header data-aos="zoom-in-down" class="block__header">
                 <h2>Our ability</h2>
                 <p>
                     We have modern and powerful technology and tools
                 </p>
             </header>
-            <div class="container">
+            <div data-aos="zoom-out-up" class="container">
                 <div class="what">
                     <div class="card">
                         <div class="card__img">
@@ -386,11 +387,11 @@
             </div>
         </section>
         <section class="block">
-            <header class="block__header">
+            <header data-aos="flip-right" class="block__header">
                 <h2>What our Customers are Saying</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum autem quos!</p>
             </header>
-            <div class="container">
+            <div data-aos="flip-left" class="container">
                 <div class="testimonial">
                     <div class="testimonial__image">
                         <img src="images/woman.jpg" alt="A customer" />
@@ -423,10 +424,10 @@
             </div>
         </section>
         <section class="block price">
-            <header class="block__header">
+            <header data-aos="fade-down" class="block__header">
                 <h2>Become our member and get a better experience</h2>
             </header>
-            <div class="container price__content">
+            <div data-aos="fade-up" class="container price__content">
                 <div class="price__card">
                     <div class="card--secondary price__card-title">
                         <h3>Standard</h3>
@@ -601,7 +602,6 @@
                         <div class="collapsible__content">
                             <ul class="list">
                                 <li><a href="#">Website Hosting</a></li>
-                                <!-- <li><a href="#">Free Automated Wordpress</a></li> -->
                                 <li><a href="#">Migrations</a></li>
                             </ul>
                         </div>
@@ -659,5 +659,9 @@
             </div>
         </footer>
         <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+             AOS.init();
+        </script>
     </body>
 </html>
